@@ -5,9 +5,12 @@ Run: streamlit run app.py
 import os, sys, time, warnings
 warnings.filterwarnings('ignore')
 
-# ── Path setup – must be FIRST ─────────────────────────────────────────────────
+# 🔥 ADD THIS
 ROOT = os.path.dirname(os.path.abspath(__file__))
+UTILS = os.path.join(ROOT, "utils")
+
 sys.path.insert(0, ROOT)
+sys.path.insert(0, UTILS)
 
 import streamlit as st
 
